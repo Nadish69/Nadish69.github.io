@@ -4,9 +4,7 @@ from scapy.all import sniff, IP
 
 app = Flask(__name__)
 
-@app.route('/')
-def index():
-    return render_template('index.html')
+
 
 @app.route('/analyze_network', methods=['GET'])
 def analyze_network():
